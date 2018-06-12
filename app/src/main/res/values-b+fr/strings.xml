@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_login">Se connecter</string>
+
+    <string name="setup_instructions_weight">To set up your scale, press and hold the SET button until a Bluetooth icon appears. Press and hold the SET button again until \'PAr\' appears on the screen.</string>
+    <string name="setup_instructions_bloodPressure">To get started place the blood pressure monitor and this device on a table next to eachother. Press and hold the Start button until the screen reads PR.</string>
+    <string name="setup_instructions_bloodGlucose">To get started place the glucose meter and this device on a table next to eachother. Use the up and down arrow keys to highlight different options on the screen. Use the OK button to select an option. Select the Settings option on the glucose meter screen. Select the Wireless option on the screen. Note: you may have to press the down arrow repeatedly to highlight the Wireless option. Select the Pairing option on the glucose meter. Select the Pair Device option on the glucose meter.</string>
+    <string name="setup_instructions_bloodOxygen">To get started place the pulse oximeter and this device on a table next to eachother. Place the pulse oximeter on your finger as shown in the picture above.</string>
+
+    <string name="collect_reading_instructions_weight">1. Place the {{device}} on the floor.\n\n2. Make sure it is placed on a hard flat surface.\n\n3. Tap the middle of the {{device}} until it reads 0.0\n\n4. Step on the {{device}} and wait until a reading is taken.\n\n5. Press NEXT to record your reading.</string>
+    <string name="collect_reading_instructions_bloodPressure">1. Sit with your back supported and feet flat on the floor.\n\n2. Place the cuff on your arm over bare skin. Look at the pictures on the cuff as a guide.\n\n3. Take a few minutes to relax before taking a reading.\n\n4. When you\'re ready\, press the START button on the {{device}}.\n\n5. Keep still and do not talk during the reading.\n\n6. Wait to remove the cuff until the {{device}} shows your reading.\n\n7. Press NEXT to record your reading.</string>
+    <string name="collect_reading_instructions_bloodGlucose">1. Place the {{device}} on a table.\n\n2. Use the up and down arrow keys to highlight different options on the {{device}} screen.\n\n3. Use the OK button to select an option.\n\n4.Select the My Data option on the {{device}} screen.\n\n5. Select the Data Transfer option on the {{device}}.\n\n6. Select the Wireless option on the {{device}}.\n\n7. Press NEXT to record your reading.</string>
+    <string name="collect_reading_instructions_bloodOxygen">1. Place the {{device}} on your finger as shown in the picture above.\n\n2. Press NEXT to record your reading.</string>
+    <string name="validate_error_message">Value must be between {{MIN}} and {{MAX}}</string>
+
+</resources>

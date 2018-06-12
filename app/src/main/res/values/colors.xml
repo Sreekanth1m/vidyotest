@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="connect_transparent">#00ffffff</color>
+    <color name="connect_dark">#004A85</color>
+    <color name="connect_light">#ffffff</color>
+    <color name="connect_default">#53565a</color>
+    <color name="connect_light_gray">#b1b3b3</color>
+    <color name="connect_dark_gray">#888b8d</color>
+    <color name="connect_white_not_opaque">#FFffffff</color>
+    <color name="connect_dark_gray_opaque">#CC888b8d</color>
+    <color name="connect_black">#000000</color>
+    <color name="connect_menu">#00477f</color>
+    <color name="connect_accent">#001e46</color>
+    <color name="connect_success">#00c4b3</color>
+    <color name="connect_success_pressed">#00998c</color>
+    <color name="connect_accept">#77bc1f</color>
+    <color name="connect_warn">#f7a800</color>
+    <color name="connect_error">#e35205</color>
+    <color name="connect_lightbox_semi_transparent">#CC000000</color>
+    <color name="connect_battery_green">#77bc1f</color>
+    <color name="connect_battery_yellow">#ffce00</color>
+    <color name="connect_battery_red">#FF0000</color>
+    <color name="settings_text_blue">#004b87</color>
+    <color name="body_text_dark">#53565a</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <!--Gradient-->
+    <color name="connect_primary_top">#2278eb</color>
+    <color name="connect_primary_bottom">#005da7</color>
+    <color name="activate_button_transit_start_color">#00c4b3</color>
+    <color name="graph_background">#80e8e8e7</color>
+
+</resources>

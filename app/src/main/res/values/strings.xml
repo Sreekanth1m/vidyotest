@@ -1,0 +1,27 @@
+<resources>
+    <!--Headings-->
+    <string name="app_name">Connect</string>
+    <string name="menu">Menu</string>
+    <string name="biometric">Biometric</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="device_manager">Device Manager</string>
+    <string name="health_check">Health Check</string>
+    <string name="readings">Readings</string>
+    <string name="reading_trends">Reading Trends</string>
+    <string name="resources">Resources</string>
+    <string name="settings_text">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="asset_statements" translatable="false">[{\n  \"relation\": [\"delegate_permission/common.handle_all_urls\"],\n  \"target\": {\n    \"namespace\": \"web\",\n    \"site\": \"https://connectAndroid.com\",\n  }\n}]</string>
+    <!--Video Call-->
+    <string name="allow_push_notifications_title">Allow Push Notifications?</string>
+    <string name="allow_push_notifications_message">Do you want to allow this app to push calls to you?</string>
+    <string name="incoming_video_call_text">Incoming Video Call</string>
+    <string name="video_ready_to_connect_label">Connecting…</string>
+    <string name="video_call_disconnecting_label">Disconnecting…</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="video_call_call_ended_label">Call ended</string>
+    <string name="cancel_action_text_placeholder">The video call was cancelled.</string>
+
+</resources>

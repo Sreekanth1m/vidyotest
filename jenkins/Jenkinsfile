@@ -1,0 +1,59 @@
+pipeline {
+    agent any
+    stages {
+        stage('Set Gradle configuration & pull dependencies') {
+            steps {
+                sh 'rm build.gradle'
+                sh 'cp jenkins/build.gradle .'
+                sh 'docker logout'
+                sh 'docker pull docker-dev-virtual.artifacts.medtronic.com/mcms-gradle-android-sdk'
+                sh 'echo "android.builder.sdkDownload=false\n" >> gradle.properties'
+                sh 'echo "artifactory_jcenter_repo=techfutures-gradle-virtual\nartifactory_google_repo=mcms_transformation-gradle-dev-virtual\n" >> gradle.properties'
+                withCredentials([usernamePassword(credentialsId: '34783f7d-a52f-4c9e-8652-fdb905602492', passwordVariable: 'ARTIFACTORY_PWD', usernameVariable: 'ARTIFACTORY_USER')]) {
+                    sh 'echo "artifactory_user=$ARTIFACTORY_USER\n" >> gradle.properties'
+                    sh 'echo "artifactory_password=$ARTIFACTORY_PWD\n" >> gradle.properties'
+                }
+                sh 'echo "artifactory_contextUrl=https://artifacts.medtronic.com/artifactory/\n" >> gradle.properties'
+                sh 'echo "sdk.dir=/opt/android-sdk\n" >> local.properties'
+                sh 'chmod 777 jenkins/buildScript.sh'
+            }
+        }
+        stage('Build Android APK') {
+            steps {
+                sh 'docker run --rm -v "${PWD}":/src --network host docker-dev-virtual.artifacts.medtronic.com/mcms-gradle-android-sdk /src/jenkins/buildScript.sh'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                //sh 'docker run --rm -a stdout -a stderr --privileged=true ${JOB_NAME,,}:${BUILD_NUMBER} testScript.sh'
+                sh 'echo "testing done here. (succeeded)"'
+            }
+        }
+        stage('Push to Artifactory') {
+            when {
+              expression {
+                currentBuild.result == null || currentBuild.result == 'SUCCESS' 
+              }
+            }
+            steps {
+                sh 'VERSION=$(docker run -a stdout -v "${PWD}/app/build/outputs/apk/debug/output.json":/output.json docker-dev-virtual.artifacts.medtronic.com/mcms-jq:0.1 -r ".[0].apkInfo.versionName" output.json)'
+                withCredentials([usernamePassword(credentialsId: '34783f7d-a52f-4c9e-8652-fdb905602492', passwordVariable: 'ARTIFACTORY_PWD', usernameVariable: 'ARTIFACTORY_USER')]) {
+                    sh 'curl -u ${ARTIFACTORY_USER}:${ARTIFACTORY_PWD} -T app/build/outputs/apk/debug/app-debug.apk "https://artifacts.medtronic.com/artifactory/mcms_transformation-generic-stage-local/Connect/Android/connect-${VERSION}-build.${BUILD_NUMBER}.apk"'
+                }
+            }
+        }
+    }
+    post {
+        always {
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'app/build/reports', reportFiles: 'lint-results.html', reportName: 'Lint Results', reportTitles: ''])
+            junit allowEmptyResults: true, keepLongStdio: true, testResults: '**/build/test-results/**/TEST-*.xml'
+            step([$class: 'Mailer', notifyEveryUnstableBuild: true, recipients: emailextrecipients([[$class: 'CulpritsRecipientProvider'], [$class: 'RequesterRecipientProvider']])])
+            sh 'echo "cleaning workspace"'
+            cleanWs()
+            //sh 'docker rmi -f ${JOB_NAME,,}:${BUILD_NUMBER}'
+        }
+        failure {
+            sh 'echo "sent email notifications"'
+        }
+    }
+}

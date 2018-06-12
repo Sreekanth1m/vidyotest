@@ -1,0 +1,217 @@
+{
+  "timeZoneShortText": "CST",
+  "timeZoneMicrosoftId": "Central Standard Time",
+  "readingDefinitions": [
+    {
+      "id": "weight",
+      "text": "Weight",
+      "measurementDefinitions": [
+        {
+          "id": "recordedOn",
+          "text": "Recorded On",
+          "unitID": null,
+          "unitText": null
+        },
+        {
+          "id": "weight",
+          "text": "Weight",
+          "unitID": "kilograms",
+          "unitText": "kgs"
+        }
+      ]
+    },
+    {
+      "id": "bloodpressure",
+      "text": "Blood Pressure",
+      "measurementDefinitions": [
+        {
+          "id": "recordedOn",
+          "text": "Recorded On",
+          "unitID": null,
+          "unitText": null
+        },
+        {
+          "id": "systolic",
+          "text": "Systolic",
+          "unitID": "millimetersOfMercury",
+          "unitText": "mmHg"
+        },
+        {
+          "id": "diastolic",
+          "text": "Diastolic",
+          "unitID": "millimetersOfMercury",
+          "unitText": "mmHg"
+        },
+        {
+          "id": "heartRate",
+          "text": "Heart Rate",
+          "unitID": "beatsPerMinute",
+          "unitText": "bpm"
+        }
+      ]
+    },
+    {
+      "id": "temperature",
+      "text": "Temperature",
+      "measurementDefinitions": [
+        {
+          "id": "recordedOn",
+          "text": "Recorded On",
+          "unitID": null,
+          "unitText": null
+        },
+        {
+          "id": "temperature",
+          "text": "Temperature",
+          "unitID": "celsius",
+          "unitText": "°C"
+        }
+      ]
+    }
+  ],
+  "readings": [
+    {
+      "id": "weight",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "5/1/2018 12:57:39 PM"
+        },
+        {
+          "id": "weight",
+          "value": "300.32"
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "5/2/2018 12:57:39 PM"
+        },
+        {
+          "id": "weight",
+          "value": "290.32"
+        }
+      ]
+    },
+    {
+      "id": "bloodpressure",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "4/30/2018 12:57:10 PM"
+        },
+        {
+          "id": "systolic",
+          "value": "140"
+        },
+        {
+          "id": "diastolic",
+          "value": "70"
+        }
+      ]
+    },
+    {
+      "id": "bloodpressure",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "5/1/2018 12:37:10 PM"
+        },
+        {
+          "id": "systolic",
+          "value": "130"
+        },
+        {
+          "id": "diastolic",
+          "value": "90"
+        }
+      ]
+    },
+    {  "id": "bloodpressure",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "5/2/2018 12:37:10 PM"
+        },
+        {
+          "id": "systolic",
+          "value": "120"
+        },
+        {
+          "id": "diastolic",
+          "value": "80"
+        }
+      ]
+    },
+    {
+      "id": "temperature",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "4/30/2018 12:56:43 PM"
+        },
+        {
+          "id": "temperature",
+          "value": "97.0"
+        }
+      ]
+    },
+    {
+      "id": "temperature",
+      "measurements": [
+        {
+          "id": "recordedOn",
+          "value": "5/1/2018 12:37:00 PM"
+        },
+        {
+          "id": "temperature",
+          "value": "98.6"
+        }
+      ]
+    }
+  ],
+  "readingSummaries": [
+    {
+      "id": "Weight",
+      "measurementSummaries": [
+        {
+          "id": "Weight",
+          "low": "300.32",
+          "high": "300.32",
+          "average": "300.32"
+        }
+      ]
+    },
+    {
+      "id": "BloodPressure",
+      "measurementSummaries": [
+        {
+          "id": "Systolic",
+          "low": "140",
+          "high": "501",
+          "average": "320"
+        },
+        {
+          "id": "Diastolic",
+          "low": "70",
+          "high": "301",
+          "average": "185"
+        }
+      ]
+    },
+    {
+      "id": "Temperature",
+      "measurementSummaries": [
+        {
+          "id": "Temperature",
+          "low": "97.0",
+          "high": "98.0",
+          "average": "97.5"
+        }
+      ]
+    }
+  ]
+}

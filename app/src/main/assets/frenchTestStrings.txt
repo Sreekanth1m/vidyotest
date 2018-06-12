@@ -1,0 +1,14 @@
+Est-ce que votre souffle est plus court aujourd'hui?
+Est-ce que vous vous sentez plus essoufflé qu'à l'habitude en pratiquant vos activités normales?
+Vous sentez-vous essoufflé même au repos?
+Avez-vous plus de mal à parler ou à terminer de courtes phrases à cause d'un souffle court?
+N'oubliez pas de le signaler à votre équipe de soins si vous remarquez un changement dans votre respiration ou si vous avez l'impression que votre état s'est dégradé.
+Faites-vous des efforts pour réduire la consommation de sodium (sel) dans votre alimentation?
+Il est important que vous réduisiez votre consommation de sodium.  Limiter la consommation de sodium peut vraiment aider à maintenir votre pression sanguine à l'intérieur d'une plage saine.
+Vous êtes-vous pesé aujourd'hui?
+Veuillez énoncer ou saisir votre poids
+Avez-vous pris votre pression sanguine aujourd'hui?
+Il est important que votre pression sanguine soit suivie régulièrement. Vous devriez continuer de prendre votre pression même si elle est sous contrôle.
+Veuillez énoncer ou saisir le nombre inférieur de votre pression sanguine
+Avez-vous pris votre rythme cardiaque aujourd'hui?
+Veuillez énoncer ou saisir votre rythme cardiaque.

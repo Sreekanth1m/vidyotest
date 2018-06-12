@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "329299212783",
+    "firebase_url": "https://itcc-android-connect.firebaseio.com",
+    "project_id": "itcc-android-connect",
+    "storage_bucket": "itcc-android-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:329299212783:android:ae9d13de05deed0c",
+        "android_client_info": {
+          "package_name": "com.medtronic.mcms.connectandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "329299212783-pdlcj9eml80djvleddsu3bg41dq7qqqg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkJrj848laH379vpFa2yygujqZfagpccQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

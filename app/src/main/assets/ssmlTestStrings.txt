@@ -1,0 +1,14 @@
+<speak><s>Are you having a nice day?</s><emphasis level='reduced'>Good nutrition</emphasis>, will help control your <emphasis level='reduced'>weight</emphasis>, lower your <emphasis level='reduced'>blood pressure</emphasis>, and lower your <emphasis level='reduced'>cholesterol</emphasis>, <emphasis level='reduced'>as well as</emphasis>, help your body heal faster.</speak>
+<speak>Are you having a nice day!</speak>
+<speak>Are you having a nice day?</speak>
+<speak>Let's learn about what causes a heart attack, also known as a myocardial infarction <say-as interpret-as="characters">MI</say-as>.</speak>
+<speak><prosody rate="x-slow" pitch="-2st">Can you hear me now?</prosody></speak>
+<speak><prosody rate="medium" pitch="-2st">Can you hear me now?</prosody></speak>
+<speak><prosody rate="x-fast" pitch="-2st">Can you hear me now?</prosody></speak>
+<speak><prosody rate="x-slow" pitch="-2st">Can you hear me now?</prosody></
+<speak>Can <emphasis rate="strong">you</emphasis> hear me now?</speak>
+<speak>Can you hear me now?</speak>
+<speak>Some<break time="200ms"/> say tomato<break time="200ms"/> others say tamahto?</speak>
+<speak>Does <say-as interpret-as="fraction">5+1/2</say-as> sound right?</speak>
+<speak>Can you<break time="200ms"/> hear me now?</speak>
+<speak><p><s>This is the first sentence of the paragraph.</s><s>Here's another sentence.</s></p></speak>
