@@ -176,7 +176,7 @@ public class VideoCallActivity extends Activity implements
         Log.e(TAG, "On Start called");
         Intent intent = getIntent();
 //        mToggleConnectButton.setEnabled(true);
-        if (intent != null) {
+        if (intent != null && intent.hasExtra("notificationData")) {
             try {
                 notificationModel = (NotificationModel) intent.getSerializableExtra("notificationData");
              //   Model.getInstance().setVidyoMeetingId(notificationModel.getVidyoMeetingRoom());
